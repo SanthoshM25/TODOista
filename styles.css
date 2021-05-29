@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat Alternates;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #a7bbc7;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 2em 2em 1em 2em;
+}
+
+#task-inp {
+  position: relative;
+  background-color: #dbe5e7;
+  color: black;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 0.2em;
+  margin-bottom: 2em;
+}
+
+#task-inp:hover {
+  background-color: #fff;
+}
+
+#btn-add {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+  bottom: -0.2em;
+  top: 8.8em;
+  margin-left: 0.8em;
+  background-color: #dbe5e7;
+  color: #626568;
+  font-weight: bold;
+  font-size: medium;
+  border: 0;
+  border-radius: 10px;
+}
+
+#btn-add:hover {
+  background-color: #fff;
+}
+.done {
+  text-decoration: line-through;
+  background-color: #a7bbc7;
+  border: none;
+  /* transition: linear 0.5s ease-in; */
+}
+
+.delete {
+  display: none;
+  transition: all 0.5s ease-out;
+}
+
+li {
+  height: 2em;
+  width: 300px;
+  background-color: #1111;
+  cursor: pointer;
+  list-style: none;
+  padding: 15px 25px 5px 25px;
+  color: #111;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-bottom: 2px solid #025f70;
+  /* border-radius: 5px; */
+  margin-left: 3em;
+  margin-bottom: 10px;
+  background: transparent;
+  transition: all 0.1s ease-out;
+}
+
+li:hover {
+  background-color: transparent;
+  border: 2px solid #025f70;
+  border-radius: 5px;
+}
+
+li > button {
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  float: right;
+  font-size: medium;
+  cursor: pointer;
+}
