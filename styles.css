@@ -104,3 +104,13 @@ li > button {
   font-size: medium;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  #task-inp {
+    width: 10em;
+  }
+
+  li {
+    width: 200px;
+  }
+}
