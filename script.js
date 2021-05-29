@@ -31,5 +31,10 @@ function enterPressed(evt) {
     input.value = "";
   }
 }
-addBtn.addEventListener("click", addTask);
+
+function addBtnClicked() {
+  addTask();
+  input.value = "";
+}
+addBtn.addEventListener("click", addBtnClicked);
 input.addEventListener("keypress", enterPressed);
