@@ -25,6 +25,7 @@ body {
 }
 
 #task-inp {
+  width: 15em;
   position: relative;
   background-color: #dbe5e7;
   color: black;
@@ -82,7 +83,7 @@ li {
   font-weight: 600;
   border-bottom: 2px solid #025f70;
   /* border-radius: 5px; */
-  margin-left: 3em;
+  margin-left: 1em;
   margin-bottom: 10px;
   background: transparent;
   transition: all 0.1s ease-out;
