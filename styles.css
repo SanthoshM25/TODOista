@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat Alternates;
-  overflow: hidden;
 }
 
 input:focus {
@@ -15,7 +14,6 @@ body {
 }
 
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,16 +94,31 @@ li:hover {
   border-radius: 5px;
 }
 
-li > button {
-  background-color: transparent;
-  font-weight: bold;
+li .edit-btn {
+  background: url("./edit-icon.png") no-repeat;
+  background-size: 80%;
+  height: 30px;
+  width: 20px;
   border: none;
   float: right;
-  font-size: medium;
+  cursor: pointer;
+}
+
+li .del-btn {
+  background: url("./cancel-btn.png") no-repeat;
+  background-size: 80%;
+  height: 30px;
+  width: 20px;
+  margin-left: 15px;
+  border: none;
+  float: right;
   cursor: pointer;
 }
 
 @media (max-width: 600px) {
+  * {
+    overflow: scroll;
+  }
   #task-inp {
     width: 10em;
   }
