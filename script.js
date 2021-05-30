@@ -8,13 +8,18 @@ function addTask() {
   console.log(input.value);
   if (taskLength > 0) {
     var list = document.createElement("li");
-    var text = document.createTextNode(input.value);
+    var val = input.value;
+    var text = document.createTextNode(val);
     list.appendChild(text);
     ul.appendChild(list);
-    var btn = document.createElement("button");
-    btn.className = "del-btn";
-    btn.appendChild(document.createTextNode("X"));
-    list.appendChild(btn);
+    var delBtn = document.createElement("button");
+    delBtn.className = "del-btn";
+    delBtn.appendChild(document.createTextNode(""));
+    list.appendChild(delBtn);
+    var editBtn = document.createElement("button");
+    editBtn.className = "edit-btn";
+    editBtn.appendChild(document.createTextNode(""));
+    list.appendChild(editBtn);
   }
   function completeTask() {
     list.classList.toggle("done");
@@ -22,8 +27,13 @@ function addTask() {
   function removeTask() {
     list.classList.toggle("delete");
   }
+  function editTask() {
+    input.value = val;
+    list.classList.toggle("delete");
+  }
   list.addEventListener("click", completeTask);
-  btn.addEventListener("click", removeTask);
+  delBtn.addEventListener("click", removeTask);
+  editBtn.addEventListener("click", editTask);
 }
 
 function enterPressed(evt) {
