@@ -29,6 +29,7 @@ function addTask() {
   }
   function editTask() {
     input.value = val;
+    input.focus();
     list.classList.toggle("delete");
   }
   list.addEventListener("click", completeTask);
