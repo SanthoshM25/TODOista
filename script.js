@@ -12,6 +12,7 @@ function addTask() {
     list.appendChild(text);
     ul.appendChild(list);
     var btn = document.createElement("button");
+    btn.className = "del-btn";
     btn.appendChild(document.createTextNode("X"));
     list.appendChild(btn);
   }
