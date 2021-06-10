@@ -1,4 +1,4 @@
--#TODOista
+# TODOista 
 
 A simple todo app built with HTML, CSS, JavaScript.
 TODOista - A simple todo app built with HTML, CSS, JavaScript.
